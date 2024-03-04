@@ -1,0 +1,55 @@
+@font-face {
+    font-family: caviar_dreams;
+    src: url("./fonts/caviar_dreams/CaviarDreams.ttf");
+}
+
+:root {
+    font-size: 10px;
+
+    --c1: darkorchid;
+    --c2: #ff0000;
+    --c3: rgb(127, 127, 127);
+    --c4: rgba(127, 127, 127, 0.5);
+}
+
+*{
+    font-family: 'caviar_dreams ', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--c1);
+}
+
+#navbar {
+    background-color: var(c2);
+    width: auto;
+    padding: 0 10px 0 10px;
+
+    position: sticky;
+    top: 0px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+.buttons{
+    color:darkblue;
+    border: 2px darkblue solid
+}
+
+.content{
+    margin: 0 10px 0 10px;
+    padding: 5px 5px 5px 5px;
+    border:darkblue solid;
+    background-color: aqua;
+}
+
+.icon{
+    margin: 10px 0 10px 0;
+}

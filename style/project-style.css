@@ -1,0 +1,47 @@
+:root{
+    --primary: #000;
+    --secondary: #fff;
+
+    color: var(--secondary);
+}
+
+* {
+    color: var(--secondary);
+}
+
+body {
+    background-color: var(primary);
+}
+
+.page-num{
+    position: fixed;
+
+    bottom: 20px;
+    right: 60px;
+
+    width: 60px;
+}
+
+.page-num p{
+    margin: 5px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .left-nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 40%;
+}
+
+#navbar .left-nav-container img {
+    width: 50px
+}
