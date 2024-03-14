@@ -1,23 +1,24 @@
 @font-face {
-    font-family: caviar_dreams;
-    src: url("./fonts/caviar_dreams/CaviarDreams.ttf");
+    font-family: Conthrax;
+    src: url('../font/Conthrax-BLRLraCV.otf');
 }
 
-:root{
+:root {
     --primary: #000;
     --secondary: #fff;
-    --tertiary: #888;
+    --tertiary: #333;
 
     color: var(--secondary);
-    font-family: 'caviar_dreams', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 * {
     color: var(--secondary);
+    font-family: 'Conthrax', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
     background-color: var(--primary);
+    margin: 0;
 }
 
 /* Generic Classes */
@@ -39,12 +40,14 @@ body {
 /* Specific Classes */
 
 #sidebar-nav {
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: -150px;
     width: 150px;
     height: 100%;
     background-color: var(--tertiary);
     z-index: 10;
+
+    transition: all ease-in-out 250ms;
 }
 
 #sidebar-nav>button {
@@ -58,42 +61,44 @@ body {
     border: none;
 }
 
-#sidebar-nav>button:hover{
+#sidebar-nav>button:hover {
     cursor: pointer;
 }
 
 #sidebar-nav div button {
-    border: 2px black;
+    border: 2px solid var(--secondary);
     background: none;
     margin: 10px 0 10px 0;
 }
 
-#sidebar-nav div button-hover{
-    cursor: pointer;
+#sidebar-nav div button:hover {
+    cursor: pointer
 }
 
-.page-num{
+.page-num {
     position: fixed;
-
-    bottom: 20px;
-    right: 60px;
-
-    width: 60px;
+    bottom: 0px;
+    right: 0px;
     z-index: 5;
 }
 
-.page-num p{
+.page-num p {
     margin: 5px;
 }
 
-/* #navbar{
+/* #navbar {
+
 } */
 
-#navbar .left-nav-container{
+#navbar .left-nav-container {
     font-size: 12px;
-    width: 35%;
+    
+    width: auto;
 }
 
+#navbar .left-nav-container p {
+    margin: 0 10px 0 10px;
+}
 #navbar .left-nav-container img {
     width: 50px;
 }
@@ -107,63 +112,51 @@ body {
     cursor: pointer;
 }
 
-.header-container {
-
-}
-
 .page-nav {
-
 }
 
 .arrow-button {
     background: none;
-    border: 0;
+    border: none;
 }
 
 .arrow-button:hover {
     cursor: pointer;
 }
 
+/* .arrow-button:hover img {
+} */
+
 .arrow-button img {
     width: 40px;
     height: 20px;
 }
 
-.page{
-    margin: 0px 100px 0px 100px;
+.page {
+    margin: 0 50px 0 100px;
 }
 
-.page .year-range{
-    width:15%;
+.page .year-range {
+    width: 15%;
 }
 
-.page .project-title{
+.page .project-title {
     width: 20%;
     font-size: 24px;
 }
 
-.page .description{
-    width:65%;
+.page .description {
+    width: 65%;
 }
 
 /* IMPORTANT CLASSES */
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.sidebar-hidden {
-    animation: from-right 500ms ease-in-out;
-    direction: reverse;
+#sidebar-nav.sidebar-shown {
+    right: 0px;
 }
 
 /* ANIMATIONS */
-@keyframes from-right {
-    from {
-        right: -150px;
-    }
-
-    to {
-        right: 0px;
-    }
-}

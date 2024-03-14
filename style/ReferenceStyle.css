@@ -1,21 +1,16 @@
-p{
+p {
     color: blue;
-    
 }
 
-img{
-    width: 500px;
+img {
+    width: 300px;
     height: 300px;
 }
 
-.greendiv{
+.greendiv {
     color: green;
 }
 
-.greendiv p{
+html body div .greendiv .paragraph {
     color: red;
-}
-
-.greendiv .paragraph {
-    color: blueviolet;
 }

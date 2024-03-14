@@ -1,33 +1,39 @@
 @font-face {
-    font-family: caviar_dreams;
-    src: url("./fonts/caviar_dreams/CaviarDreams.ttf");
+    font-family: Halogen;
+    src: url('../font/HalogenbyPixelSurplus-Regular.otf');
+}
+
+@font-face {
+    font-family: Conthrax;
+    src: url('../font/Conthrax-BLRLraCV.otf');
+}
+
+* {
+    font-family: 'Conthrax', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 :root {
     font-size: 10px;
 
-    --c1: darkorchid;
-    --c2: #ff0000;
+    --c1: white;
+    --c2: #ddd;
     --c3: rgb(127, 127, 127);
-    --c4: rgba(127, 127, 127, 0.5);
-}
-
-*{
-    font-family: 'caviar_dreams', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --c3: rgba(127, 127, 127, 0.5);
 }
 
 body {
-    background-color: var(--c1);
+    background: var(--c1);
+    margin: 0;
 }
 
 #navbar {
-    background-color: var(c2);
+    background-color: var(--c2);
     width: auto;
-    padding: 0 10px 0 10px;
+    padding: 5px 10px 5px 10px;
 
     position: sticky;
     top: 0px;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,18 +44,19 @@ body {
     text-decoration: none;
 }
 
-.buttons{
-    color:darkblue;
-    border: 2px darkblue solid
+.buttons {
+    color: red;
+    border: 2px red solid;
 }
 
-.content{
+button {
+    color: blue !important;
+}
+
+.content {
     margin: 0 10px 0 10px;
-    padding: 5px 5px 5px 5px;
-    border:darkblue solid;
-    background-color: aqua;
 }
 
-.icon{
-    margin: 10px 0 10px 0;
+.icon {
+    margin: 0 10px 0 10px;
 }
