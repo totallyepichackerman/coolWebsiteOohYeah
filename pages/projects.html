@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>My Projects</title>
     <link rel="stylesheet" href="../style/project-style.css">
     <script src="../script/script.js" defer></script>
 </head>
 <body>
     <div class="" id="sidebar-nav">
-        <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icons/close.svg"></button>
         <div class="flex-column">
-            <a href="./about.html"><button>About Me</button></a>
-            <a href="./projects.html"><button>My Projects</button></a>
-            <a href="./contact.html"><button>Contact Me</button></a>
+            <a id="sidebar-nav-close" onclick="toggleNav()"><button><img src="../icons/close.svg"></button></a>
+            <a href="./home.html"><img src="../icons/home.svg" alt="OOPS"><button>Home</button></a>
+            <a href="./about.html"><img src="../icons/book.svg" alt="OOPS"><button>About Me</button></a>
+            <a href="./projects.html"><img src="../icons/tech.svg" alt="OOPS"><button>Projects</button></a>
+            <a href="./contact.html"><img src="../icons/phone.svg" alt="OOPS"><button>Contacts</button></a>
         </div>
     </div>
 
     <div class="flex-row" id="navbar">
         <div class="left-nav-container flex-row">
-            <a href="../index.html">
-                <img src="../img/catpic.jpeg">
+            <a href="./home.html">
+                <img src="../img/roboticsPFP.jpg">
             </a>
-            <p>rschwartz25@pascack.org  |  (201) 423-4183</p>
+            <p>Ryan Schwartz  |  Projects</p>
         </div>
         <div>
             <button class="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
