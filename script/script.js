@@ -40,3 +40,8 @@ function toggleNav() {
     let navbar = document.getElementById('sidebar-nav');
     navbar.classList.toggle('sidebar-shown');
 }
+
+function toggleNose() {
+    let nose = document.getElementById('clown-nose');
+    nose.classList.toggle('nose-shown');
+}

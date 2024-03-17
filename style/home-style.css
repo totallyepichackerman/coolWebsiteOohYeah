@@ -48,7 +48,6 @@ body {
 }
 
 /*NAVIGATION*/
-
 #sidebar-nav {
     position: fixed;
     right: -200px;
@@ -134,6 +133,10 @@ body {
     height: 75px;/*x1,5*/
 }
 
+#navbar .left-nav-container a:hover {
+    cursor: pointer;
+}
+
 #navbar .left-nav-container img {
     height:inherit;
 }
@@ -149,10 +152,34 @@ body {
     height: inherit;
 }
 
-
 #navbar .hamburger-button:hover {
     cursor: pointer;
     background-color: var(--highlight);
+}
+
+#clown-nose {
+    position: fixed;
+    left: -13px;
+    top: 32px;
+    width: auto;
+    height: auto;
+    background: none;
+    z-index: 10;
+
+    transition: all ease-in-out 250ms;
+}
+
+#clown-nose:hover {
+    cursor: pointer;
+}
+
+
+#clown-nose img {
+    height: 13px;
+}
+
+#clown-nose.nose-shown {
+    left: 35px;
 }
 
 /*PAGE SPECIFIC*/
