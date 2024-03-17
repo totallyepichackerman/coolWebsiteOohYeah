@@ -55,6 +55,7 @@ body {
     height: auto;
     background-image: url('../img/circuitBackground.jpg');
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: 100%;
     z-index: 10;
     padding: 10px;
@@ -116,6 +117,7 @@ body {
 #navbar {
     background-image: url(../img/circuitBackground.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
