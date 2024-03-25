@@ -17,9 +17,9 @@
 :root {
     font-size: 10px;
 
-    --background: #000;
-    --text: #fff;
-    /* --c3: #333; */
+    --background: #222;
+    --text: cadetblue;
+    --border: white;
     --highlight: rgba(0, 0, 0, 0.5);
     color: var(--text);
 }

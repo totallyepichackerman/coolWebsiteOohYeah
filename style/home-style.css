@@ -17,9 +17,9 @@
 :root {
     font-size: 10px;
 
-    --background: #000;
-    --text: #fff;
-    /* --c3: #333; */
+    --background: #222;
+    --text: cadetblue;
+    --border: white;
     --highlight: rgba(0, 0, 0, 0.5);
     color: var(--text);
 }
@@ -185,3 +185,49 @@ body {
 }
 
 /*PAGE SPECIFIC*/
+#home-nav a {
+    border: 3px inset var(--border);
+    border-radius: 5px;
+    margin: 40px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+#home-nav a:hover {
+    cursor: pointer;
+    border-style: double;
+    border-width: 10px;
+    padding: 13px;
+    background-color: var(--highlight);
+}
+
+#home-nav a img {
+    width: 150px;
+    height: auto;
+}
+
+#home-nav a button{
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+#home-nav a button:hover{
+    cursor: pointer;
+}
+
+.button-text {
+    text-decoration: none;
+    transition: all 0.2s
+}
+
+#welcome {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+#welcome-info {
+    font-size: 30px;
+    margin-top: 10px;
+}
