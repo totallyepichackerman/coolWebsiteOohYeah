@@ -26,6 +26,9 @@
 
 body {
     background: var(--background);
+    background-image: url(../img/circuitBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
 }
 
@@ -53,9 +56,10 @@ body {
     right: -200px;
     width: auto;
     height: auto;
-    background-image: url('../img/circuitBackground.jpg');
+    /* background-image: url('../img/circuitBackground.jpg');
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: var(--highlight);
     background-size: 100%;
     z-index: 10;
     padding: 10px;
@@ -102,8 +106,9 @@ body {
 }
 
 #sidebar-nav-close {
-    height: 47px;/*x1,5 ; 38 prev*/
+    height: 60px;/*x1,5 ; 38 --> 47 prev*/
     padding: 0 0 0 10px !important;
+    background-color: black;
 }
 
 #sidebar-nav-close button {
@@ -115,10 +120,11 @@ body {
 }
 
 #navbar {
-    background-image: url(../img/circuitBackground.jpg);
+    /* background-image: url(../img/circuitBackground.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
+    background: var(--highlight);
 }
 
 #navbar .left-nav-container {
@@ -141,6 +147,57 @@ body {
 
 #navbar .left-nav-container img {
     height:inherit;
+}
+
+#navbar .nav-buttons-container {
+    width: 60%;
+    margin: 0 50px 0 0;
+}
+
+#navbar .nav-buttons-container a {
+    border: 1px;
+    border-style: inset;
+    border-color: var(--border);
+    margin: 2px;
+    padding: 0 10px 0 10px;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar .nav-buttons-container a:hover {
+    cursor: pointer;
+    background-image: url(../img/circuitBackground.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    border-style: solid;
+}
+
+#navbar .nav-buttons-container a button {
+    border: none;
+    background: none;
+    vertical-align: middle;
+    /* align-self: center;*/
+    
+    font-size: 15px;/*x1,5 ; line added*/
+}
+
+#navbar .nav-buttons-container a button:hover {
+    cursor: pointer;
+}
+
+#navbar .nav-buttons-container a img {  
+    border: none;
+    background: none;
+    margin: 10px 0 10px 0;
+    height: 27px;/*x1,5*/
+    vertical-align: middle;
+    align-self: center;
+    padding: 0 5px 0 0;
+}
+
+#navbar .nav-buttons-container a img:hover {
+    cursor: pointer;
 }
 
 #navbar .hamburger-button {

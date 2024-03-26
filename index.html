@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="../style/home-style.css">
+    <link rel="stylesheet" href="../style/index-style.css">
     <script src="../script/script.js" defer></script>
 </head>
 <body>
-    <div class="" id="sidebar-nav">
+    <!-- <div class="" id="sidebar-nav">
         <div class="flex-column">
             <a id="sidebar-nav-close" onclick="toggleNav()"><button><img src="../icons/close.svg"></button></a>
             <a href="./index.html"><img src="../icons/home.svg" alt="OOPS"><button>Home</button></a>
@@ -16,7 +16,7 @@
             <a href="./pages/projects.html"><img src="../icons/flask.svg" alt="OOPS"><button>Projects</button></a>
             <a href="./pages/contact.html"><img src="../icons/phone.svg" alt="OOPS"><button>Contacts</button></a>
         </div>
-    </div>
+    </div> -->
 
     <div class="flex-row" id="navbar">
         <div class="left-nav-container flex-row">
@@ -25,9 +25,15 @@
             </a>
             <p>Ryan Schwartz  |  Home</p>
         </div>
-        <div>
-            <button class="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
+        <div class="nav-buttons-container flex-row">
+        <a href="./index.html"><img src="../icons/home.svg" alt="OOPS"><button>Home</button></a>
+        <a href="./pages/about.html"><img src="../icons/book.svg" alt="OOPS"><button>About Me</button></a>
+        <a href="./pages/projects.html"><img src="../icons/flask.svg" alt="OOPS"><button>Projects</button></a>
+        <a href="./pages/contact.html"><img src="../icons/phone.svg" alt="OOPS"><button>Contacts</button></a>
         </div>
+        <!-- <div>
+            <button class="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
+        </div> -->
     </div>
 
     <a id="clown-nose" onclick="toggleNose()">
