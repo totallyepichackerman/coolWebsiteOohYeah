@@ -7,6 +7,7 @@ let pageNumberEl = document.getElementById('current-page');
 
 let goofyboi = document.getElementById('logo');
 
+
 initializePages();
 
 function initializePages() {
@@ -39,9 +40,10 @@ function prevPage() {
 }
 
 function swapImage() {
-    goofyboi.src = '../img/RSGoofy.png';
+    goofyboi.src = ((window.location.href.includes("index.html")) ? "": ".")+'./img/RSGoofy.png';
+
 }
 
 function unSwapImage() {
-    goofyboi.src = '../img/RSFancy.png';
+    goofyboi.src = ((window.location.href.includes("index.html")) ? "": ".")+'./img/RSFancy.png';
 }
