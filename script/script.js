@@ -40,10 +40,10 @@ function prevPage() {
 }
 
 function swapImage() {
-    goofyboi.src = ((window.location.href.includes("index.html")) ? "": ".")+'./img/RSGoofy.png';
+    goofyboi.src = ((window.location.href.includes("index.html") || window.location.href.charAt(window.location.href.length-1) === "/") ? "": ".")+'./img/RSGoofy.png';
 
 }
 
 function unSwapImage() {
-    goofyboi.src = ((window.location.href.includes("index.html")) ? "": ".")+'./img/RSFancy.png';
+    goofyboi.src = ((window.location.href.includes("index.html") || window.location.href.charAt(window.location.href.length-1) === "/") ? "": ".")+'./img/RSFancy.png';
 }
