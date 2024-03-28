@@ -5,11 +5,13 @@ let pages;
 let pageCountEl = document.getElementById('total-pages');
 let pageNumberEl = document.getElementById('current-page');
 
+let goofyboi = document.getElementById('logo');
+
 initializePages();
 
 function initializePages() {
-    pages = document.getElementsByClassName('page');
-    pageCountEl.textContent = pageCount;
+    // pages = document.getElementsByClassName('page');
+    // pageCountEl.textContent = pageCount;
 }
 
 function nextPage() {
@@ -36,12 +38,10 @@ function prevPage() {
     pageNumberEl.textContent = currentPage + 1;
 }
 
-function toggleNav() {
-    let navbar = document.getElementById('sidebar-nav');
-    navbar.classList.toggle('sidebar-shown');
+function swapImage() {
+    goofyboi.src = '../img/RSGoofy.png';
 }
 
-function toggleNose() {
-    let nose = document.getElementById('clown-nose');
-    nose.classList.toggle('nose-shown');
+function unSwapImage() {
+    goofyboi.src = '../img/RSFancy.png';
 }

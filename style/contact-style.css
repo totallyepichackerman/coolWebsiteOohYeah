@@ -26,6 +26,9 @@
 
 body {
     background: var(--background);
+    background-image: url(../img/circuitBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
 }
 
@@ -48,77 +51,8 @@ body {
 }
 
 /*NAVIGATION*/
-#sidebar-nav {
-    position: fixed;
-    right: -200px;
-    width: auto;
-    height: auto;
-    background-image: url('../img/circuitBackground.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: 10;
-    padding: 10px;
-
-    transition: all ease-in-out 250ms;
-}
-
-#sidebar-nav div {
-    align-items: normal;
-}
-
-#sidebar-nav div button {
-    border: none;
-    background: none;
-    vertical-align: middle;
-    font-size: 15px;/*x1,5 ; line added*/
-}
-
-#sidebar-nav div button:hover {
-    cursor: pointer;
-}
-
-#sidebar-nav div img {  
-    border: none;
-    background: none;
-    margin: 10px 0 10px 0;
-    height: 27px;/*x1,5*/
-    vertical-align: middle;
-}
-
-#sidebar-nav div img:hover {
-    cursor: pointer;
-}
-
-#sidebar-nav div a {
-    border: none;
-    margin: 2px 0 2px 0;
-    padding: 0 10px 0 10px;
-}
-
-#sidebar-nav div a:hover {
-    cursor: pointer;
-    background-color: var(--highlight);
-}
-
-#sidebar-nav-close {
-    height: 47px;/*x1,5 ; 38 prev*/
-    padding: 0 0 0 10px !important;
-}
-
-#sidebar-nav-close button {
-    float: right;
-}
-
-#sidebar-nav.sidebar-shown {
-    right: 0px;
-}
-
 #navbar {
-    background-image: url(../img/circuitBackground.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: var(--highlight);
 }
 
 #navbar .left-nav-container {
@@ -136,51 +70,126 @@ body {
 }
 
 #navbar .left-nav-container a:hover {
-    cursor: pointer;
+    cursor: help;
 }
 
 #navbar .left-nav-container img {
     height:inherit;
+    margin-left: 10px;
 }
 
-#navbar .hamburger-button {
-    background: none;
-    border: 0;
-    height: 39px;/*x1,5*/
-    margin: 10px;
+#navbar .nav-buttons-container {
+    width: 60%;
+    margin: 0 50px 0 0;
 }
 
-#navbar .hamburger-button img {
-    height: inherit;
+#navbar .nav-buttons-container a {
+    border: 1px;
+    border-style: inset;
+    border-color: var(--border);
+    margin: 2px;
+    padding: 0 10px 0 10px;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
 }
 
-#navbar .hamburger-button:hover {
+#navbar .nav-buttons-container a:hover {
     cursor: pointer;
-    background-color: var(--highlight);
+    background-image: url(../img/circuitBackground.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    border-style: solid;
 }
 
-#clown-nose {
-    position: fixed;
-    left: -13px;
-    top: 32px;
-    width: auto;
-    height: auto;
+#navbar .nav-buttons-container a button {
+    border: none;
     background: none;
-    z-index: 10;
-
-    transition: all ease-in-out 250ms;
+    vertical-align: middle;
+    font-size: 15px;
 }
 
-#clown-nose:hover {
+#navbar .nav-buttons-container a button:hover {
     cursor: pointer;
 }
 
-#clown-nose img {
-    height: 13px;
+#navbar .nav-buttons-container a img {  
+    border: none;
+    background: none;
+    margin: 10px 0 10px 0;
+    height: 27px;
+    vertical-align: middle;
+    align-self: center;
+    padding: 0 5px 0 0;
 }
 
-#clown-nose.nose-shown {
-    left: 35px;
+#navbar .nav-buttons-container a img:hover {
+    cursor: pointer;
 }
 
 /*PAGE SPECIFIC*/
+#number-text-upper {
+    font-size: 16px;
+    color: #2e8b57;
+    margin-bottom: 1px;
+}
+
+#number-text-lower {
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+#contact-container {
+    margin: 0 200px 0 200px;
+}
+
+#contact-container a {
+    border: 3px inset var(--border);
+    border-radius: 5px;
+    margin: 40px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+#contact-container a:hover {
+    cursor: pointer;
+    border-style: double;
+    border-width: 10px;
+    padding: 13px;
+    background-color: var(--highlight);
+}
+
+#contact-container a img {
+    width: 150px;
+    height: auto;
+}
+
+#contact-container a button{
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+#contact-container a button:hover{
+    cursor: pointer;
+}
+
+.button-text {
+    text-decoration: none;
+    transition: all 0.2s
+}
+
+#smaller {
+    width: 120px !important;
+}
+
+#header {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+#additional-text {
+    font-size: 30px;
+    margin-top: 10px;
+}

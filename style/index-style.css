@@ -46,16 +46,8 @@ body {
     justify-content: space-between;
 }
 
-.content {
-    margin: 0 10px 0 10px;
-}
-
 /*NAVIGATION*/
 #navbar {
-    /* background-image: url(../img/circuitBackground.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;*/
     background: var(--highlight);
 }
 
@@ -74,103 +66,12 @@ body {
 }
 
 #navbar .left-nav-container a:hover {
-    cursor: pointer;
+    cursor: help;
 }
 
 #navbar .left-nav-container img {
     height:inherit;
-}
-
-#navbar .nav-buttons-container {
-    width: 60%;
-    margin: 0 50px 0 0;
-}
-
-#navbar .nav-buttons-container a {
-    border: 1px;
-    border-style: inset;
-    border-color: var(--border);
-    margin: 2px;
-    padding: 0 10px 0 10px;
-    width: 150px;
-    text-decoration: none;
-    text-align: center;
-}
-
-#navbar .nav-buttons-container a:hover {
-    cursor: pointer;
-    background-image: url(../img/circuitBackground.jpg);
-    background-attachment: fixed;
-    background-size: 100%;
-    border-style: solid;
-}
-
-#navbar .nav-buttons-container a button {
-    border: none;
-    background: none;
-    vertical-align: middle;
-    /* align-self: center;*/
-    
-    font-size: 15px;/*x1,5 ; line added*/
-}
-
-#navbar .nav-buttons-container a button:hover {
-    cursor: pointer;
-}
-
-#navbar .nav-buttons-container a img {  
-    border: none;
-    background: none;
-    margin: 10px 0 10px 0;
-    height: 27px;/*x1,5*/
-    vertical-align: middle;
-    align-self: center;
-    padding: 0 5px 0 0;
-}
-
-#navbar .nav-buttons-container a img:hover {
-    cursor: pointer;
-}
-
-#navbar .hamburger-button {
-    background: none;
-    border: 0;
-    height: 39px;/*x1,5*/
-    margin: 10px;
-}
-
-#navbar .hamburger-button img {
-    height: inherit;
-}
-
-#navbar .hamburger-button:hover {
-    cursor: pointer;
-    background-color: var(--highlight);
-}
-
-#clown-nose {
-    position: fixed;
-    left: -13px;
-    top: 32px;
-    width: auto;
-    height: auto;
-    background: none;
-    z-index: 10;
-
-    transition: all ease-in-out 250ms;
-}
-
-#clown-nose:hover {
-    cursor: pointer;
-}
-
-
-#clown-nose img {
-    height: 13px;
-}
-
-#clown-nose.nose-shown {
-    left: 35px;
+    margin-left: 10px;
 }
 
 /*PAGE SPECIFIC*/
