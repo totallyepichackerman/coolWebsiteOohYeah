@@ -128,3 +128,50 @@ body {
 }
 
 /*PAGE SPECIFIC*/
+#self-image {
+    width: 33%;
+    height: auto;
+    border: 3px solid #2e8b57;
+    border-radius: 3px;
+    border-radius: 20%;
+    margin: 0 33% 0 33%;
+}
+
+#main-title {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+#main-description {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.activity-container {
+    border-left: 1px solid #2e8b57;
+    border-right: 1px solid #2e8b57;
+}
+
+#right-container {
+    border-right: none;
+}
+
+#left-container {
+    border-left: none;
+}
+
+.activity-image {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.activity-header {
+    font-size: 20px;
+}
+
+.activity-description {
+    font-size: 15px;
+    margin: 20px;
+}
