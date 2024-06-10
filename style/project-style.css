@@ -162,6 +162,24 @@ body {
     width: 65%;
 }
 
+.title {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.subtitle {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.text {
+    font-size: 15px;
+    margin: 5px;
+}
+
 /* IMPORTANT CLASSES */
 .hidden {
     display: none;
